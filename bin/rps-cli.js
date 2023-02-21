@@ -40,7 +40,7 @@ if(args._.length == 0){
 }
 let shot = args._[0]
 try {
-    console.log(JSON.stringify(rpsA(args.shot)));
+    console.log(JSON.stringify(rpsA(shot)));
 }catch(e){
     console.log(helpText);
     console.log(ruleText);
