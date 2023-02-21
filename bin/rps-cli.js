@@ -34,13 +34,9 @@ if(args.r){
     process.exit(0);
 }
 
-if(args._.length == 0){
-    console.log(JSON.stringify(rps()));
-    process.exit(0);
-}
 let shot = args._[0]
 try {
-    console.log(JSON.stringify(rpsA(shot)));
+    console.log(JSON.stringify(rps(shot)));
 }catch(e){
     console.log(e.name);
     console.log(e.message);
