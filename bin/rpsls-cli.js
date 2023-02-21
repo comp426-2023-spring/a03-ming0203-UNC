@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import minimist from "minimist";
-import { rpsls } from "../lib/rpsls.js";
+import { rpsls } from 'node-rpsls';
 
 const args = minimist(process.argv.slice(2));
 
@@ -42,12 +42,12 @@ if(args.r){
 }
 
 if(args._.length == 0){
-    console.log(rpsls());
+    console.log(JSON.stringify(rpsls()));
     process.exit(0);
 }
 
 try {
-    console.log(JSON.stringify(rpsls(args)));
+    console.log(JSON.stringify(rpsls(args.player)));
 }catch(e){
     console.log(helpText);
     console.log(ruleText);
