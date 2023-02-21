@@ -38,7 +38,7 @@ if(args._.length == 0){
     console.log(JSON.stringify(rps()));
     process.exit(0);
 }
-const shot = args.shot;
+let shot = args._[0]
 try {
     console.log(JSON.stringify(rpsA(args.shot)));
 }catch(e){

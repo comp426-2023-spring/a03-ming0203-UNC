@@ -23,7 +23,7 @@ if(args.h){
 }
 
 const ruleText = 
-`Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
+`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
 
 - Scissors CUTS Paper
 - Paper COVERS Rock
@@ -45,10 +45,10 @@ if(args._.length == 0){
     console.log(JSON.stringify(rpsls()));
     process.exit(0);
 }
-const shot = args.shot;
+let shot = args._[0]
 try {
     console.log(JSON.stringify(rpslsA(shot)));
 }catch(e){
-    //console.log(helpText);
+    console.log(helpText);
     console.log(ruleText);
 }
