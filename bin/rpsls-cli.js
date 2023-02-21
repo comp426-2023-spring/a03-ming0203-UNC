@@ -45,7 +45,7 @@ if(args._.length == 0){
     console.log(JSON.stringify(rpsls()));
     process.exit(0);
 }
-let shot = args._[0];
+const shot = args.shot;
 try {
     console.log(JSON.stringify(rpslsA(shot)));
 }catch(e){
