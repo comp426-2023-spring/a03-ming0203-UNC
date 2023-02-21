@@ -49,6 +49,6 @@ const shot = args.shot;
 try {
     console.log(JSON.stringify(rpslsA(shot)));
 }catch(e){
-    console.log(helpText);
+    //console.log(helpText);
     console.log(ruleText);
 }
