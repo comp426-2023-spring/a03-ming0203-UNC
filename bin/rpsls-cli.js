@@ -47,7 +47,7 @@ if(args._.length == 0){
 }
 let shot = args._[0];
 try {
-    console.log(JSON.stringify(rpsls(shot)));
+    console.log(JSON.stringify(rpslsA(shot)));
 }catch(e){
     console.log(helpText);
     console.log(ruleText);
