@@ -43,6 +43,7 @@ try {
     console.log(JSON.stringify(rpsA(shot)));
 }catch(e){
     console.log(e.name);
+    console.log(e.message);
     console.log(helpText);
     console.log(ruleText);
 }
