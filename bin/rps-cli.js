@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import minimist from "minimist";
-import { rps } from 'node-rpsls';
+import minimist from 'minimist';
+import { rps } from '../lib/rpsls.js';
 
 const args = minimist(process.argv.slice(2));
 
@@ -38,9 +38,9 @@ if(args._.length == 0){
     console.log(JSON.stringify(rps()));
     process.exit(0);
 }
-
+let shot = args._[0];
 try {
-    console.log(JSON.stringify(rps(args)));
+    console.log(JSON.stringify(rps(shot)));
 }catch(e){
     console.log(helpText);
     console.log(ruleText);
