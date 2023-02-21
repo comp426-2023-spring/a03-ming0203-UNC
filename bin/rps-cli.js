@@ -42,6 +42,7 @@ let shot = args._[0]
 try {
     console.log(JSON.stringify(rpsA(shot)));
 }catch(e){
+    console.log(e.name);
     console.log(helpText);
     console.log(ruleText);
 }

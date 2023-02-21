@@ -49,6 +49,7 @@ let shot = args._[0]
 try {
     console.log(JSON.stringify(rpslsA(shot)));
 }catch(e){
+    console.log(e.name);
     console.log(helpText);
     console.log(ruleText);
 }
